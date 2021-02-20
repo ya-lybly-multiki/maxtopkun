@@ -10,11 +10,96 @@ body {
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
+    color: #89f497;
+    text-transform: none;
 
     background-color: #d39377;
-    background-image: url('./img/fone.jpg');
-    background-position: top center;
+    background-image: url('/img/fone1.png');
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choise-item{
+  border: 2px solid;
+  border-color:silver;  
+}
+
+.process {
+    margin: 0 auto;
+}
+
+.button-category{
+    display: inline-block;
+    color: black;
+    font-size: 125%;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .25em .5em;
+    outline: none;
+    border: 1px solid rgb(250,172,17);
+    border-radius: 7px;
+    background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .2s, border-color .2s;
+}
+
+.flex {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    color: black;
+    text-transform: none;
+}
+
+.flex-item-1,
+.flex-item-2,
+.flex-item-3,
+.flex-item-4 {
+   
+    width: 200px;
+    height: fit-content;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: center;
+    border-radius: 5px;
+    min-height: 60px;
+    j
+}
+
+.flex-item-1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+    
+.flex-item-2 {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}    
+
+.flex-item-3 {
+    top: 200px;
+    transform: translateX(-50%);
+    left: 40%;
+}
+
+.flex-item-4 {
+    top: 200px;
+    transform: translateX(-50%);
+    right: 30%;
+
 }
